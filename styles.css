@@ -1,3 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&display=swap');
+
+
 body{
-    background-image:url("orange-back.jpg");
+    background-image:url("jelly-background.jpg");
+    
+}
+h2{
+    font-family: 'Cormorant Garamond', serif;
+    text-align:center;
+    font-size:30px;
+    color:red;
+    
+}
+.outer{
+    position:absolute;
+    left:48%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    
+}
+.container-element{
+    display:grid;
+    grid-template-rows: 60px;
+    grid-template-columns:250px;
+    text-align:center;
+}
+.container-element2{
+    display:grid;
+    grid-template-rows:repeat(5,60px);
+    grid-template-columns:repeat(4,70px);
+    gap:2px 2px;
+    padding:10px;
+}
+.container-element-textarea textarea{
+    padding:17px;
+    margin-left:10px;
+    width: 100%;
+    border-color:#FFB119;
+  
+}
+
+.container-element input{
+      
+    border-radius:5px;
+}
+
+.color-buttons{
+    background-color:#FFB119;
+    border-color:#f76802;
+    border-style:solid;
+}
+
+.other-buttons{
+    border-color:#FDB278;
+    border-style:solid;
+    
 }
