@@ -4,54 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <Link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
+    <p class="errorDisplay-div" style="background-color: red; width:30%;padding:8px; margin:auto;display: none;">Invalid Input</p>
     <h2>CALCULATOR</h2>
+    
+    <div class="container">
     <div class="outer">
     <main class="container-element">
         <div class="container-element-textarea">
-        <textarea></textarea>
+        <textarea id="textAreaElement"></textarea>
         </div>
       <div class="container-element2">
-           <!--  <div class="container-element-row1"> -->
-            <input type="button" value="C" class="color-buttons">
-            <input type="button" value="%" class="color-buttons">
-            <input type="button" value="⌫" class="color-buttons">
-            <input type="button" value="÷" class="color-buttons">
-             <!-- </div>
- -->
-             <!-- <div class="container-element-row2"> -->
+            <input type="button" value="C" class="clear-button">
+            <input type="button" value="%" class="operator-button">
+            <input type="button" value="⌫" id="backspace-button">
+            <input type="button" value="/" class="operator-button">
+           
             <input type="button" value="1" class="other-buttons">
             <input type="button" value="2" class="other-buttons">
             <input type="button" value="3" class="other-buttons">
-            <input type="button" value="*" class="color-buttons">
-             <!-- </div> -->
+            <input type="button" value="*" class="operator-button">
+           
+            <input type="button" value="4" class="other-buttons">
+            <input type="button" value="5" class="other-buttons">
+            <input type="button" value="6" class="other-buttons">
+            <input type="button" value="-" class="operator-button">
+           
+            <input type="button" value="7" class="other-buttons">
+            <input type="button" value="8" class="other-buttons">
+            <input type="button" value="9" class="other-buttons">
+            <input type="button" value="+" class="operator-button">
 
-            <!--  <div class="container-element-row3"> -->
-                <input type="button" value="4" class="other-buttons">
-                <input type="button" value="5" class="other-buttons">
-                <input type="button" value="6" class="other-buttons">
-                <input type="button" value="-" class="color-buttons">
-            <!-- </div> -->
+            <input type="button" value="." class="other-buttons">
+            <input type="button" value="0" class="other-buttons">
+            <input type="button" value="History" id="history-button">
+            <input type="button" value="=" id="result-button">
 
-           <!--  <div class="container-element-row4"> -->
-                <input type="button" value="7" class="other-buttons">
-                <input type="button" value="8" class="other-buttons">
-                <input type="button" value="9" class="other-buttons">
-                <input type="button" value="+" class="color-buttons">
-
-           <!--  </div> -->
-
-          <!--   <div class="container-element-row5"> -->
-                <input type="button" value="." class="other-buttons">
-                <input type="button" value="0" class="other-buttons">
-                <input type="button" value="00" class="other-buttons">
-                <input type="button" value="=" class="color-buttons">
-            <!-- </div> -->
        </div> 
     </main>
     </div>
+
+    <div class = "history">
+   <!--    <h2>Past calculations 
+       
+      </h2> -->
+      <p class="history-heading">History</p>
+      <ul class="ul-styles">
+        
+      </ul>
+      <div class ="icon-styling">
+      <i class="fa-sharp fa-regular fa-circle-xmark fa-2x" ></i></div>
+    </div>
+    
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
