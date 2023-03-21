@@ -19,7 +19,6 @@ h2{
     font-size:20px;
     color:#523f29;
 }
-
 .container{
     display:flex;
     flex-direction:row;
@@ -44,24 +43,16 @@ ul{
     padding-inline-start: 0px; 
     
 }
-
 li:nth-child(odd){
     background-color:#FFB119;
     border:1px solid #f76802;
     padding:20px;
 }
-
 li:nth-child(even){
     background-color:white;
     border:1px solid #f76802;
     padding:20px;
 }
-
-/* .ul-styles li{
-    background-color:#FFB119;
-    border:1px solid black;
-    padding:20px;
-} */
 .outer-later{
     width:30%;
     
@@ -162,26 +153,31 @@ li:nth-child(even){
     border-style:solid; 
 }
 
+.errorDisplay-div{
+    background-color: red;
+    width:30%;
+    padding:8px;
+    margin:auto;
+    display: none;
+}
+
 @media only screen and (max-width: 768px){
     
     .container{
         display:flex;
         flex-direction:column;
-        align-content:space-around;
-        
-    
-    }
-    .outer{
-        position:absolute;
-        left:44%;
-        top:40%;
-        transform:translate(-50%,-50%);
+        align-items:stretch;
+        padding-left:20px;
         
     }
-   
-.outer-later{
-    width:0%;
-    text-align:center;
+ .outer-later{
+       text-align:center;
 }
+.outer{
+    position:absolute;
+    left:44%;
+    top:40%;
+    transform:translate(-50%,-50%);
     
+}
 }

@@ -12,7 +12,7 @@ const closeIcon = document.querySelector('.icon-styling');
 const errorDisplay = document.querySelector('.errorDisplay-div');
 
 const globalArray = [];
-const historyArray =["25 / 5 = 5","45 + 5 = 50","7 + 9 = 16"];
+const historyArray =[];
 let currentValue = '';
 
 
@@ -60,7 +60,6 @@ function validateInput(input) {
 
 const calculateResult = () =>{
     //console.log(currentValue)
-    
     globalArray.push(currentValue);
     console.log(globalArray);
     currentValue = '';
